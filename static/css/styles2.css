@@ -1,0 +1,125 @@
+body{
+    background-image: url('../img/need.jpeg');
+  }
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  a:hover{
+    color: white;
+  }
+  
+  @media(max-width:360px){
+    #card{
+      width: 100% !important;
+    }
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: checkbox !important;
+    border-radius: 0;
+}
+
+  .inside{
+    display:table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+  }
+  .float{
+    display: table-cell;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    border: 2px solid black;
+    background-color: antiquewhite;
+  }
+  .float1{
+    text-align: center;
+    vertical-align: middle;
+    height: 40vh;
+    display: table-cell;
+    overflow: hidden;
+  }
+  ul img{
+    height: 190px;
+    width: 190px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border:1px solid #021a40;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    align-self: center;
+    width: 75%;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+  }
+  .para{
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    margin-top: 15px;
+  }
+  .para a:link,.para a:visited{
+    text-decoration: none;
+    color: #6c997b;
+  }
+  
+  .check{
+    text-align: center;
+    vertical-align: center;
+  
+  }
+  .task-inside{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: #d7e0ef;
+  }
+  .right-align{
+    text-align: center;
+  }
+  
+  .outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .middle {
+    display: table-cell;
+    height: 100vh !important;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    /*whatever width you want*/
+  }
+  .inner1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+  input[type="submit"]{
+      margin: auto;
+      display: block;
+  }
+  @media(max-width:360px){
+    
+  }

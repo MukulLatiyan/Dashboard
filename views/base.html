@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">  <meta name="description" content="Ambassador Dashboard">
+  <meta name="author" content="Mukul Latiyan">
+  <title>{{title}}</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/css/styles.css" rel="stylesheet">
+  {% block css %}{% endblock %}
+</head>
+
+<body>
+{% include '../../Dashboard/views/components/nav.html' %}
+
+  <div class="offset-lg-2 offset-xl-2">
+  {% include '../../Dashboard/views/components/breadcrumb.html' %}
+      {% block content%}{%endblock%}
+  </div>
+      {% include '../../Dashboard/views/components/footer.html' %}
+
+  {% include '../../Dashboard/views/components/logout.html' %}
+  
+
+</body>
+  <script>
+    var BASE_URL = 'http://6f462d91.ngrok.io';
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  {# <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> #}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js" charset="utf-8"></script>
+  <script src="/static/js/logout.js"></script>
+      {% block scripts%}{%endblock%}
+
+
+</html>
